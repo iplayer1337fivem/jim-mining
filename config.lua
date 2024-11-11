@@ -3,7 +3,7 @@ Loc = {}
 Config = {
 	Debug = false, -- enable debug mode
 	img = "ox_inventory/web/images/", --Set this to the image directory of your inventory script or "nil" if using newer qb-menu
-	Lan = "en", -- Pick your language here
+	Lan = "da", -- Pick your language here
 	Notify = "ox",			--"qb" or "ox"
 
 	DrillSound = true,		-- disable drill sounds
