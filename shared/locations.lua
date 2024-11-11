@@ -1,67 +1,4 @@
 Config.Locations = {
-    ["Washing"] = {
-        Enable = true,
-        positions = {
-            { name = "Stone Washing", coords = vec3(1840.18, 412.42, 160.49), sprite = 467, col = 3, disp = 6, blipEnable = true }, -- Mountains
-            { name = "Stone Washing", coords = vec3(1870.91, 395.1, 160.16), sprite = 467, col = 3, disp = 6, blipEnable = false },
-
-            { name = "Stone Washing", coords = vec3(-432.59, 2936.84, 13.87), sprite = 467, col = 3, disp = 6, blipEnable = true }, -- Stream Blip
-            { name = "Stone Washing", coords = vec3(-422.37, 2946.18, 13.77), sprite = 467, col = 3, blipEnable = false },
-            { name = "Stone Washing", coords = vec3(-443.21, 2926.5, 13.62), sprite = 467, col = 3, blipEnable = false },
-            { name = "Stone Washing", coords = vec3(-455.48, 2917.16, 13.52), sprite = 467, col = 3, blipEnable = false },
-
-            { name = "Stone Washing", coords = vec3(2500.64, 6129.4, 162.46), sprite = 467, col = 3, disp = 6, blipEnable = true }, -- Gordo
-
-            { name = "Stone Washing", coords = vec3(907.06, 4377.66, 30.28), sprite = 467, col = 3, disp = 6, blipEnable = true }, -- Alamo Sea
-            { name = "Stone Washing", coords = vec3(894.14, 4386.56, 30.24), sprite = 467, col = 3, blipEnable = false },
-            { name = "Stone Washing", coords = vec3(893.12, 4370.74, 30.35), sprite = 467, col = 3, blipEnable = false },
-            { name = "Stone Washing", coords = vec3(912.88, 4365.7, 30.39), sprite = 467, col = 3, blipEnable = false },
-        },
-    },
-    ["Panning"] = {
-        Enable = true,
-        positions = {
-            ["Vineyard"] = {
-                Enable = true,
-                Blip = { -- The location where you enter the mine
-                    Enable = true,
-                    name = "Gold Panning",
-                    coords = vector3(-1410.58, 2005.91, 59.4),
-                    sprite = 467, col = 5,
-                },
-                Positions = {
-                    { coords = vector4(-1396.3, 2004.59, 53.59, 82.0), w = 22.1, d = 4.0 },
-                    { coords = vector4(-1410.08, 2006.08, 48.8, 89.0), w = 6.3, d = 4.2 },
-                    { coords = vector4(-1418.62, 2006.05, 48.41, 89.0), w = 10.9, d = 6.0 },
-                }
-            },
-            ["Tongva"] = {
-                Enable = true,
-                Blip = { -- The location where you enter the mine
-                    Enable = true,
-                    name = "Gold Panning",
-                    coords = vector3(-1550.06, 1445.13, 116.37),
-                    sprite = 467, col = 5,
-                },
-                Positions = {
-                    { coords = vector4(-1550.06, 1445.13, 106.37, 139.0), w = 10.9, d = 6.0 },
-                    { coords = vector4(-1562.88, 1434.03, 107.19, 129.0), w = 24.3, d = 6.0 },
-                }
-            },
-            ["Wilderness"] = {
-                Enable = true,
-                Blip = { -- The location where you enter the mine
-                    Enable = true,
-                    name = "Gold Panning",
-                    coords = vector3(-870.24, 4424.14, 15.37),
-                    sprite = 467, col = 5,
-                },
-                Positions = {
-                    { coords = vector4(-870.24, 4424.14, 10.37, 129.0), w = 25.1, d = 19.8 },
-                }
-            },
-        },
-    },
 	['JewelBuyer'] = { -- The Location of the jewel buyer, I left this as Vangelico, others will proabably change to pawn shops
         Enable = true,
         positions = {
@@ -88,18 +25,8 @@ Config.Locations = {
                     vec4(1106.46, -1991.44, 31.49, 185.78),
                 },
             },
-            Store = {
-                { name = "Foundary Store", coords = vec4(1074.89, -1988.19, 30.89, 235.07), model = `G_M_M_ChemWork_01`, scenario = "WORLD_HUMAN_CLIPBOARD", },
-            },
             Smelting = {
                 { blipEnable = true, name = "Foundary", coords = vec3(1112.29, -2009.9, 31.46), sprite = 436, col = 1,  },
-            },
-            Cracking = {
-                { blipEnable = false, name = "Stone Cracking", coords = vec4(1109.19, -1992.8, 30.98, 146.88), sprite = 566, col = 81, prop = "prop_vertdrill_01" },
-                { blipEnable = false, name = "Stone Cracking", coords = vec4(1105.56, -1992.53, 30.94, 238.19), sprite = 566, col = 81, prop = "prop_vertdrill_01" },
-            },
-            OreBuyer = {
-                { blipEnable = false, name = "Ore Buyer", coords = vec4(1090.18, -1999.51, 30.93, 146.24), sprite = 568, col = 81, model = `G_M_M_ChemWork_01`, scenario = "WORLD_HUMAN_CLIPBOARD", },
             },
             JewelCut = {
                 { blipEnable = false, name = "Jewel Cutting", coords = vec4(1077.11, -1984.22, 31.02, 235.8), sprite = 566, col = 81, prop = `gr_prop_gr_speeddrill_01c` },
@@ -115,9 +42,6 @@ Config.Locations = {
                 coords = vec4(-596.74, 2090.99, 131.41, 16.6),
                 sprite = 527,
                 col = 81,
-            },
-            Store = {
-                { name = "Mine", coords = vec4(-594.96, 2091.3, 131.47, 67.65), model = `G_M_M_ChemWork_01`, scenario = "WORLD_HUMAN_CLIPBOARD",  },
             },
             Lights = {
                 Enable = true,
@@ -171,6 +95,16 @@ Config.Locations = {
                 vec4(-488.44, 1982.74, 124.64, 200.95),
                 vec4(-469.78, 1993.57, 123.86, 20.95),
                 vec4(-458.53, 2003.33, 123.73, 30.95),
+                vec4(3006.57, 2779.88, 42.90, -2.576),
+                vec4(3004.578369140625, 2783.763427734375, 43.67177200317383, -6.384),
+                vec4(3003.0048828125, 2789.076171875, 43.70940399169922, -10.942),
+                vec4(3000.382568359375, 2793.572265625, 44.06896209716797, -23.016),
+                vec4(2998.0224609375, 2798.05224609375, 43.89518356323242, 7.221),
+                vec4(2995.46533203125, 2803.443115234375, 42.62845230102539, 5.167),
+                vec4(2989.64013671875, 2810.876708984375, 44.41389846801758, 3.454),
+                vec4(2987.006103515625, 2816.27197265625, 44.98872375488281, 4.011),
+                vec4(2983.547607421875, 2821.858154296875, 44.81105804443359, 3.424),
+                vec4(2980.102294921875, 2825.623779296875, 44.81105804443359, 3.424)
             },
         },
         ["Quarry"] = {
@@ -182,9 +116,6 @@ Config.Locations = {
                 coords = vec4(2960.9, 2754.14, 43.71, 204.58),
                 sprite = 527,
                 col = 81,
-            },
-            Store = {
-                { name = "Quarry", coords = vec4(2960.9, 2754.14, 43.71, 204.58), model = `G_M_M_ChemWork_01`, scenario = "WORLD_HUMAN_CLIPBOARD",  },
             },
             Lights = {
                 Enable = true,
@@ -220,18 +151,8 @@ Config.Locations = {
                 sprite = 527,
                 col = 81,
             },
-            Store = {
-                { name = "Cave Shop", coords = vec4(2908.8, 2643.6, 43.26, 328.32), model = `G_M_M_ChemWork_01`, scenario = "WORLD_HUMAN_CLIPBOARD", },
-            },
             Smelting = {
                 { blipEnable = true, name = "Smelter", coords = vec3(2921.81, 2653.42, 43.15), sprite = 436, col = 1, },
-            },
-            Cracking = {
-                { name = "Stone Cracking", coords = vec4(2914.9, 2650.78, 43.08, 231.77), sprite = 566, col = 81, blipTrue = false, prop = `prop_vertdrill_01` }, -- Foundary
-                { name = "Stone Cracking", coords = vec4(2914.61, 2649.06, 43.19, 272.74), sprite = 566, col = 81, blipTrue = false, prop = `prop_vertdrill_01` }, -- Foundary
-            },
-            OreBuyer = {
-                { blipEnable = true, name = "Ore Buyer", coords = vec4(2917.79, 2646.26, 43.17, 6.14), sprite = 568, col = 81,model = `G_M_M_ChemWork_01`, scenario = "WORLD_HUMAN_CLIPBOARD", },
             },
             JewelCut = {
                 { blipEnable = true, name = "Jewel Cutting", coords = vec4(2917.45, 2654.24, 43.03, 229.61), sprite = 566, col = 81, prop = `gr_prop_gr_speeddrill_01c` },
@@ -282,7 +203,6 @@ Config.Locations = {
         --    Store = { },
         --    Smelting = { },
         --    Cracking = { },
-        --    OreBuyer = { },
         --    JewelCut = { },
         --    OrePositions = {  },
         --},
