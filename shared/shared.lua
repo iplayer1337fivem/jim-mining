@@ -145,25 +145,13 @@ function lockInv(toggle) FreezeEntityPosition(PlayerPedId(), toggle) LocalPlayer
 
 function progressBar(data)
 	local result = nil
-	if Config.ProgressBar == "ox" then
-		if exports.ox_lib:progressBar({	duration = Config.Debug and 1000 or data.time, label = data.label, useWhileDead = data.dead or false, canCancel = data.cancel or true,
-			anim = { dict = data.dict, clip = data.anim, flag = (data.flag == 8 and 32 or data.flag) or nil, scenario = data.task }, disable = { combat = true }, }) then
-			result = true
-			lockInv(false)
-		else
-			result = false
-			lockInv(false)
-		end
+	if exports.ox_lib:progressBar({	duration = Config.Debug and 1000 or data.time, label = data.label, useWhileDead = data.dead or false, canCancel = data.cancel or true,
+		anim = { dict = data.dict, clip = data.anim, flag = (data.flag == 8 and 32 or data.flag) or nil, scenario = data.task }, disable = { combat = true }, }) then
+		result = true
+		lockInv(false)
 	else
-		QBCore.Functions.Progressbar("mechbar",	data.label,	Config.Debug and 1000 or data.time, data.dead, data.cancel or true,
-		{ disableMovement = true, disableCarMovement = true, disableMouse = false, disableCombat = true, },
-		{ animDict = data.dict, anim = data.anim, flags = (data.flag == 8 and 32 or data.flag) or nil, task = data.task }, {}, {}, function()
-			result = true
-			lockInv(false)
-		end, function()
-			result = false
-			lockInv(false)
-		end, data.icon)
+		result = false
+		lockInv(false)
 	end
 	while result == nil do Wait(10) end
 	return result

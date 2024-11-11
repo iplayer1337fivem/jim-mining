@@ -3,16 +3,10 @@ Loc = {}
 Config = {
 	Debug = false, -- enable debug mode
 	img = "ox_inventory/web/images/", --Set this to the image directory of your inventory script or "nil" if using newer qb-menu
-
 	Lan = "en", -- Pick your language here
-
-	JimShops = false, 		-- Set this to true if using jim-shops
-
-	ProgressBar = "ox",		--"qb" or "ox"
 	Notify = "ox",			--"qb" or "ox"
 
 	DrillSound = true,		-- disable drill sounds
-
 	MultiCraft = true,		-- Enable multicraft
 	MultiCraftAmounts = { [1], [5], [10] },
 
